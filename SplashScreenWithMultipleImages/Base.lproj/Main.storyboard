@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SplashScreenWithMultipleImages" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,52 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchImage4" translatesAutoresizingMaskIntoConstraints="NO" id="xMo-XP-50K">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="467"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iQP-fo-88l">
+                                <rect key="frame" x="0.0" y="467" width="375" height="200"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zlu-6d-fDd">
+                                        <rect key="frame" x="152" y="75" width="70" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="ix3-Hf-ccC"/>
+                                            <constraint firstAttribute="height" constant="50" id="zOy-Y5-7sr"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="zlu-6d-fDd" firstAttribute="centerY" secondItem="iQP-fo-88l" secondAttribute="centerY" id="Mwh-aQ-6Dh"/>
+                                    <constraint firstItem="zlu-6d-fDd" firstAttribute="centerX" secondItem="iQP-fo-88l" secondAttribute="centerX" id="h3y-z6-hyl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xMo-XP-50K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="08k-ih-B5f"/>
+                            <constraint firstItem="xMo-XP-50K" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6AS-a7-wPc"/>
+                            <constraint firstItem="iQP-fo-88l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="D8a-Fb-yr6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iQP-fo-88l" secondAttribute="bottom" id="JPV-vx-1nF"/>
+                            <constraint firstItem="iQP-fo-88l" firstAttribute="top" secondItem="xMo-XP-50K" secondAttribute="bottom" id="W95-Xh-dgn"/>
+                            <constraint firstAttribute="trailing" secondItem="xMo-XP-50K" secondAttribute="trailing" id="bnw-bk-Lr6"/>
+                            <constraint firstItem="iQP-fo-88l" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="eNJ-7T-jeI"/>
+                            <constraint firstAttribute="trailing" secondItem="iQP-fo-88l" secondAttribute="trailing" id="fna-s7-N8B"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="animationContainerView" destination="zlu-6d-fDd" id="px3-FB-PFU"/>
+                        <outlet property="splashImageView" destination="xMo-XP-50K" id="MmX-BR-X29"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="92.203898050974516"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="LaunchImage4" width="16" height="16"/>
+    </resources>
 </document>

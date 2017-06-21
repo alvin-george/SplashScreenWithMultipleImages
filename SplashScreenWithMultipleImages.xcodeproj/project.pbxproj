@@ -12,6 +12,7 @@
 		18B41F841EFA5B9500FA0DFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B41F821EFA5B9500FA0DFD /* Main.storyboard */; };
 		18B41F861EFA5B9500FA0DFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B41F851EFA5B9500FA0DFD /* Assets.xcassets */; };
 		18B41F891EFA5B9500FA0DFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B41F871EFA5B9500FA0DFD /* LaunchScreen.storyboard */; };
+		18B41F911EFA5BC100FA0DFD /* AnimatedEqualizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B41F901EFA5BC100FA0DFD /* AnimatedEqualizerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		18B41F851EFA5B9500FA0DFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18B41F881EFA5B9500FA0DFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18B41F8A1EFA5B9500FA0DFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B41F901EFA5BC100FA0DFD /* AnimatedEqualizerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedEqualizerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		18B41F7D1EFA5B9400FA0DFD /* SplashScreenWithMultipleImages */ = {
 			isa = PBXGroup;
 			children = (
+				18B41F901EFA5BC100FA0DFD /* AnimatedEqualizerView.swift */,
 				18B41F7E1EFA5B9500FA0DFD /* AppDelegate.swift */,
 				18B41F801EFA5B9500FA0DFD /* ViewController.swift */,
 				18B41F821EFA5B9500FA0DFD /* Main.storyboard */,
@@ -138,6 +141,7 @@
 			files = (
 				18B41F811EFA5B9500FA0DFD /* ViewController.swift in Sources */,
 				18B41F7F1EFA5B9500FA0DFD /* AppDelegate.swift in Sources */,
+				18B41F911EFA5BC100FA0DFD /* AnimatedEqualizerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
